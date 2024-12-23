@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    padding-top: 0.25rem;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-left i{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+.nav-left i:last-child{
+    font-size: 2rem;
+    color: red;
+}
+
+
+.nav-middle{
+    width: 42vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Form of search-bar */
+.search-bar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="text"]{
+    width: 95%;
+    height: 6vh;
+    background-color: transparent;
+    border: 1.5px solid rgba(82, 79, 79, 0.734);
+    border-top-left-radius: 1.1rem;
+    border-bottom-left-radius: 1.1rem;
+    padding: 1rem;
+}
+.search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 6vh;
+    font-size: 1.35rem;
+    background-color: rgba(82, 79, 79, 0.734);
+    border-top-right-radius: 1.1rem;
+    border-bottom-right-radius: 1.1rem;
+    cursor: pointer;
+}
+.micro-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.35rem;
+    background-color: rgba(82, 79, 79, 0.734);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.nav-right{
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: 1.35rem; */
+}
+.create{
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-weight: 500;
+    background-color: rgba(82, 79, 79, 0.734);
+    cursor: pointer;
+}
+.nav-right i:nth-child(2){
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.nav-right i:last-child{
+    cursor: pointer;
+    font-size: 2.1rem;
+}
+
+
+.left-menu{
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.9em;
+    gap: 1.5rem;
+}
+.left-menu i{
+    font-size: 1.5rem;
+}
+.left-menu p{
+    font-size: 0.7rem;
+}
+.left-menu div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem
+}
