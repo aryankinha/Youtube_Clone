@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
     background-color: rgb(0, 0, 0);
@@ -24,14 +25,18 @@ body{
     align-items: center;
 }
 .nav-left i{
+    cursor: pointer;
     font-size: 1.5rem;
     margin: 0.5rem;
 }
-.nav-left i:last-child{
+.nav-left i:nth-child(2){
     font-size: 2rem;
     color: red;
 }
-
+.nav-left p{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
 
 .nav-middle{
     width: 42vw;
@@ -110,6 +115,11 @@ input[type="text"]{
 }
 
 
+main{
+    display: flex;
+    width: 100vw;
+}
+
 .left-menu{
     width: 5vw;
     height: 100vh;
@@ -130,4 +140,50 @@ input[type="text"]{
     flex-direction: column;
     align-items: center;
     gap:0.5rem
+}
+
+.main-content{
+    width: 95%;
+}
+
+.main-top{
+    width: 100%;
+    margin-top: 0.6rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+/* Learn Form the net how to hide the scroll bar  */
+.main-top::-webkit-scrollbar {
+    display: none;
+}
+.main-top p{
+    display: inline-block;
+    padding: 0.7rem;
+    margin: 0.19rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: rgba(82, 79, 79, 0.493);
+}
+
+.main-bootom{
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    row-gap: 3rem;
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(4,1fr);
+}
+iframe{
+    border: none;
+    border-radius: 10px;
+    width: 21rem;
+    height: 12rem;
+}
+.main-bootom > div{
+    padding: 0.18rem;
+    margin-right: 1rem;
+}
+.main-bootom > div :last-child{
+    color: rgba(255, 255, 255, 0.682);
 }
